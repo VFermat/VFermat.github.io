@@ -203,7 +203,7 @@ h4, p, li {
     margin: 5px;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 530px) {
 
     .main-container {
         max-width: 95%;
