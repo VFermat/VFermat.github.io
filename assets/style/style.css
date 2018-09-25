@@ -248,7 +248,15 @@ h4, p, li {
         left: 0;
     }
 
+    .top-header:active + .navigator {
+        left: 0;
+    }
+
     .navigator:hover {
+        left: 0;
+    }
+
+    .navigator:active {
         left: 0;
     }
 
