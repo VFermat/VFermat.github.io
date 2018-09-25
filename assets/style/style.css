@@ -244,19 +244,11 @@ h4, p, li {
         transition: left 2s;
     }
 
-    .top-header:hover + .navigator {
+    .top-header:hover + .navigator, .top-header:active + .navigator, .top-header:focus + .navigator {
         left: 0;
     }
 
-    .top-header:active + .navigator {
-        left: 0;
-    }
-
-    .navigator:hover {
-        left: 0;
-    }
-
-    .navigator:active {
+    .navigator:hover, .navigator:active, .navigator:focus {
         left: 0;
     }
 
