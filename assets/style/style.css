@@ -208,6 +208,10 @@ h4, p, li {
     display: none;
 }
 
+.menu-dropdown {
+    display: hidden;
+}
+
 @media (max-width: 530px) {
 
     .main-container {
@@ -263,13 +267,20 @@ h4, p, li {
         left: 0;
     }
 
+    .menu-dropdown {
+        display: block;
+        margin-top: 2rem;
+        margin-left: .25rem;
+        font-size: 1.25rem;
+    }
+
     .dropdown-name {
         pointer-events: none;
         cursor: not-allowed;
     }
     
     .dropdown {
-        margin-top: 6rem;
+        margin-top: 4rem;
         margin-left: .25rem;
     }
 
