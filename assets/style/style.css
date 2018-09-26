@@ -255,7 +255,7 @@ h4, p, li {
         cursor: pointer;
     }
 
-    .tres-barras:hover + .navigator, .tres-barras:active + .navigator, .tres-barras:focus + .navigator {
+    .top-header:hover + .navigator, .top-header:active + .navigator, .top-header:focus + .navigator {
         left: 0;
     }
 
