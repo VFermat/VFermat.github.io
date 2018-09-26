@@ -246,7 +246,7 @@ h4, p, li {
         width: 75%;
         top: 0;
         left: -75%;
-        transition: left 2s;
+        transition: left 1s;
     }
 
     .tres-barras {
@@ -269,7 +269,7 @@ h4, p, li {
     }
     
     .dropdown {
-        margin-top: 1rem;
+        margin-top: 6rem;
         margin-left: .25rem;
     }
 
