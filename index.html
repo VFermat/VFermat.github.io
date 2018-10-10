@@ -1,117 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
     <head>
-        <title>Projetos!</title>
-        <link href="https://fonts.googleapis.com/css?family=Amiri|Indie+Flower" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="assets/style/style.css">
-        <link rel="stylesheet" type="text/css" href="assets/style/reset.css">        
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <meta charset='UTF-8'>
+        <title>APS 4: Teste A/B</title>
+        <meta charset="utf-8">
+        <script>
+            if(Math.random() < 0.5) {
+                window.location.replace('Index/index.html')
+            }
+            else {
+                window.location.replace('Index/index2.html')
+            }
+        </script>
     </head>
-
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/database.js"></script>
-    <script src="assets/js/codes.js"></script>
-    <script src="assets/js/handlebars.js"></script>
-    <script src="assets/js/Projeto1.js"></script>
-
-    <body class="body">
-        <div class="main-container">
-
-            <header class="header">   
-
-                <div class="top-header" onClick="">
-                    <a href="index.html" class="logo"><img src="assets/img/logo_insper.png" alt="Logo Insper"></a>
-                    <h2 class="title">Grupo 6</h2>
-                </div>
-
-                <a class="tres-barras-a"><span class="tres-barras" onClick="">&#9776; Menu</span></a>
-
-                <section class="navigator">
-
-                    <a href="index.html" class="menu-dropdown">Menu</a>
-
-                    <div class="dropdown" onClick="">
-                        <a href="Template2/Template2_EstudosTeoricos.html?projeto=Projetos&categoria=Estudos Teóricos" class="dropdown-name">Estudos Teóricos</a>
-                        <div class="dropdown-content">
-                            <a href="Template3/Template3.html?projeto=Projetos&categoria=Estudos Teóricos&materia=Matvar"><p class="dropdown-item">Matemática da Variação</p></a>
-                            <a href="Template3/Template3.html?projeto=Projetos&categoria=Estudos Teóricos&materia=Matmulti"><p class="dropdown-item">Matemática Multivariada</p></a>
-                            <a href="Template3/Template3.html?projeto=Projetos&categoria=Estudos Teóricos&materia=Modsim"><p class="dropdown-item">Modelagem e Simulação</p></a>
-                            <a href="Template3/Template3.html?projeto=Projetos&categoria=Estudos Teóricos&materia=Desconstruindo"><p class="dropdown-item">Desconstruindo a Matéria</p></a>
-                            <a href="Template3/Template3.html?projeto=Projetos&categoria=Estudos Teóricos&materia=GDE"><p class="dropdown-item">Grandes Desafios</p></a>
-                        </div>
-                    </div>
-
-                    <div class="dropdown" onClick="">
-                        <a href="Template2/Template2_empreendedorismo.html?projeto=Projetos&categoria=Empreendedorismo e Inovação" class="dropdown-name">Empreendedorismo e Inovação</a>
-                        <div class="dropdown-content">
-                            <a href="Template3/Template3.html?projeto=Projetos&categoria=Empreendedorismo e Inovação&materia=Carroça"><p class="dropdown-item">Carroça</p></a>
-                            <a href="Template3/Template3.html?projeto=Projetos&categoria=Empreendedorismo e Inovação&materia=Codes"><p class="dropdown-item">Co-Design</p></a>
-                            <a href="Template3/Template3.html?projeto=Projetos&categoria=Empreendedorismo e Inovação&materia=Inovação"><p class="dropdown-item">Inovação Empresarial</p></a>
-                            <a href="Template3/Template3.html?projeto=Projetos&categoria=Empreendedorismo e Inovação&materia=Modelo"><p class="dropdown-item">Modelo de Startup</p></a>
-                        </div>
-                    </div>
-
-                    <div class="dropdown" onClick="">
-                        <a href="Template2/Template2_codigo.html?projeto=Projetos&categoria=Projetos de Código" class="dropdown-name">Projetos de Código</a>
-                        <div class="dropdown-content">
-                            <a href="Template3/Template3.html?projeto=Projetos&categoria=Projetos de Código&materia=CD"><p class="dropdown-item">Ciência dos Dados</p></a>
-                            <a href="Template3/Template3.html?projeto=Projetos&categoria=Projetos de Código&materia=Dessoft"><p class="dropdown-item">Design de Software</p></a>
-                        </div>
-                    </div> 
-
-                    <div class="dropdown" onClick="">
-                        <a href="Template2/Template2_eletro_eletronica.html?projeto=Projetos&categoria=Projeto Eletro-Eletrônicos" class="dropdown-name">Projetos Eletro-Eletrônicos</a>
-                        <div class="dropdown-content">
-                            <a href="Template3/Template3.html?projeto=Projetos&categoria=Projeto Eletro-Eletrônicos&materia=Acionamentos"><p class="dropdown-item">Acionamentos Elétricos</p></a>
-                            <a href="Template3/Template3.html?projeto=Projetos&categoria=Projeto Eletro-Eletrônicos&materia=Estação"><p class="dropdown-item">Estação Metereológica</p></a>
-                            <a href="Template3/Template3.html?projeto=Projetos&categoria=Projeto Eletro-Eletrônicos&materia=Job Rotation"><p class="dropdown-item">Job Rotation</p></a>
-                            <a href="Template3/Template3.html?projeto=Projetos&categoria=Projeto Eletro-Eletrônicos&materia=Mod e Controle"><p class="dropdown-item">Modelagem e Controle</p></a>
-                        </div>
-                    </div>
-                    
-                </section>
-
-            </header>
-
-            <p class="section-line"><a href="index.html">Home</a>
-
-            <main class="main">
-
-                <div class="descrition-box-container">
-
-                    <a href="Template2/Template2_EstudosTeoricos.html?projeto=Projetos&categoria=Estudos Teóricos">
-                        <section class="descrition-box">
-                            <h4 class="topic">Estudos Teóricos</h4>
-                            <p class="topic-initial-description">Estudos Teóricos são aqueles que tem por finalidade conhecer ou aprofundar conhecimentos específicos de determinada área da ciência.</p>
-                        </section>
-                    </a>
-
-                    <a href="Template2/Template2_empreendedorismo.html?projeto=Projetos&categoria=Empreendedorismo e Inovação">
-                        <section class="descrition-box">
-                            <h4 class="topic">Empreendedorismo e Inovação</h4>
-                            <p class="topic-initial-description">Empreendedorismo e inovação tem foco nas novas tendências do mercado e onde o potencial de investimento pode ser explorado. O cenário atual se apresenta cada vez mais competitivo e para se destacar no mercado é necessário ser um empreendedor inovador, que ofereça algo diferente a esse mercado e que esse algo novo seja um elemento de promoção da mudança e do desenvolvimento econômico. </p>
-                        </section>
-                    </a>
-
-                    <a href="Template2/Template2_codigo.html?projeto=Projetos&categoria=Projetos de Código">
-                        <section class="descrition-box">
-                            <h4 class="topic">Projetos de Código</h4>
-                            <p class="topic-initial-description">Projetos de código estão diretamente relacionados a familiarização com softwares e a área de programação. Desta forma, esta seção é destinada para projetos que envolvem algorítmos de programação. Aqui, as seguintes habilidades são desenvolvidas: Definição do problema; Análise de requisitos; Estudo de viabilidade; Análise do domínio do problema; Projeto arquitetural; Implementação; Testes; Cronograma de execução.</p>
-                        </section>
-                    </a>
-
-                    <a href="Template2/Template2_eletro_eletronica.html?projeto=Projetos&categoria=Projeto Eletro-Eletrônicos">
-                        <section class="descrition-box">
-                            <h4 class="topic">Projetos Eletro-Eletrônicos</h4>
-                            <p class="topic-initial-description">Projetos eletroeletrônicos abrangem uma área da física elétrica. Nesta seção, encontra-se projetos que envolvem a implementação de circuitos elétricos com finalidades práticas distintas. Aqui, organização e tarefas ordenadas em etapas, desde a concepção inicial até a validação experimental, são fundamentais para sucesso do projeto.  </p>
-                        </section>
-                    </a>
-                    
-                </div>
-
-            </main>
-
-        </div>
+    <body>
     </body>
 </html>
